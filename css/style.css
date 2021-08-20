@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
 :root {
-  --primary-color: #047aed;
+  --primary-color: #3172aa;
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
-  --light-color: #ececec;
+  --light-color: #f5f0ec;
   --success-color: #5cb85c;
   --error-color: #d9534f;
 }
@@ -16,9 +17,13 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   color: #333;
   line-height: 1.6;
+}
+
+.logo {
+  font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -153,13 +158,14 @@ pre {
 }
 
 /* STATS */
+
 .stats {
   padding-top: 100px;
   animation: slideInFromBottom 1s ease-in;
 }
 
 .stats-heading {
-  max-width: 500px;
+  /*max-width: 500px;*/
   margin: auto;
 }
 
@@ -319,6 +325,7 @@ pre {
   .cloud .grid,
   .features-head .grid,
   .features-sub-head .grid,
+  .features-main .grid,
   .docs-main .grid,
   .docs-head .grid {
     grid-template-columns: 1fr;
